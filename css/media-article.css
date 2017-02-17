@@ -1,0 +1,84 @@
+@media screen and (max-width: 1200px){
+	.container{
+		width: 95%;
+	}
+
+	#commentform input{
+		margin: 10px 0;
+		width: 60%;
+	}
+
+	#commentform textarea{
+		margin: 10px 0;
+		width: 60%;
+	}
+
+}
+
+@media screen and (max-width: 992px){
+	.container{
+		width: 95%;
+	}
+	#commentform input{
+	margin: 10px 0;
+	width: 70%;
+	}
+
+	#commentform textarea{
+		margin: 10px 0;
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 770px){
+
+	nav .container > .row > div:first-child{
+		text-align: center;
+	}
+
+	nav #options{
+		padding-top: 5px;
+	}
+	
+	nav ul {
+		text-align: center;
+	}
+
+	.article #article-video{
+		width: 320px;
+		height: 240px;
+	}
+
+	#commentform input{
+	margin: 10px 0;
+	width: 100%;
+	}
+
+	#commentform textarea{
+		margin: 10px 0;
+		width: 100%;
+	}
+
+
+	footer .left{
+    	margin-bottom: 10px;
+    }
+    footer .right{
+    	/*margin: 10px;*/
+    	border-top: 1px dotted grey;
+    }
+    footer *{
+    	text-align: center;
+    	box-sizing: border-box;
+    }
+	footer .input-group{
+	width: 300px;
+	top:50%;
+	left: 50%;
+	margin-top: 10px;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	}
+
+
+}

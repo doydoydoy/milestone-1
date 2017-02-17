@@ -1,81 +1,262 @@
-* , section {
-	/*border: 1px solid green;*/
-	color: black;
+*, * *, * * *{
 	box-sizing: border-box;
 }
 
-.fixed-nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
+* a, * a:hover, * a:visited, * a:active, * a:focus {
+	text-decoration: none;
+	color: white;
 }
 
 nav{
-	background-color: lightblue;
+	background-color: white;
+	/*height: 100px;*/
+	font-family: "Lato",Helmet,Freesans,sans-serif;
+	/*height: 75px;*/
 }
 
-nav ul > li{
-	list-style: none;
-	display: inline-block;
-	color: black;
+.sticky {
+    position:fixed;
+    top:0;
+}
+
+
+nav h1 > a:link{
+	/*border: 2px solid grey;*/
+	padding: 5px 10px;
+	color: white;
+}
+
+
+nav h1 > a:hover, #options a:hover{
+	color: red;
+	text-decoration: none;
+}
+
+nav #options{
+	padding-top: 25px;
 }
 
 nav ul{
+	list-style: none;
 	text-align: right;
+}
+
+nav ul li{
+	font-size: 14px;
+	display: inline;
+	padding-left: 10px;
+	position: relative;
+}
+
+nav #options > a{
+	display: none;
+}
+
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #19c589;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type*='checkbox']{
+    /*display: none;*/
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type*='checkbox']:checked ~ ul{
+    /*display: block;
+    width: ;
+    transition: 0.3s;*/
+}
+
+input[type*='submit']:hover{
+	background-color: #e0e2e5;
+}
+
+#search-container{
+	background-color: white;
+}
+
+#search-container .btn-default, #search-container .form-control{
+	border: none;
+	box-shadow: none;
+	border-radius: 0px;
+}
+
+#search-container:active{
 
 }
 
-#search{
-	position: fixed;
-  	top: 70px;
-  	left: 0;
-  	z-index: 9999;
-  	width: 100%;
+header{
+	padding: 0px;
+	font-family: "Lato",Helmet,Freesans,sans-serif;
 }
 
-/*header{
-	background-color: yellowgreen;
-	padding: 0;
-	margin-top: 100px;
-}*/
-
-/*header #banner-main{
-	height: 300px;
+header a{
+	text-decoration: none;
+	color: white;
 }
 
-header #banner-2nd, header #banner-3rd{
+header a:hover, header a:focus{
+	text-decoration: none;
+	color: white;
+	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+}
+
+header [id*='banner']{
+	position: relative;
+}
+
+header #banner1 h3 {
+	position: absolute;
+	top: 70%;
+	left: 20px;
+}
+
+header #banner1 h4{
+	position: absolute;
+	top: 80%;
+	left: 20px;
+}
+
+header #banner2 h4, #banner3 h4{
+	position: absolute;
+	top: 75%;
+	left: 20px;
+	width: 90%;
+}
+
+header #banner1{
+	height: 400px;
+	background: url(../res/la_la_land.png) top/cover no-repeat;
+	box-shadow: inset 0 -125px 150px -10px #000000;
+}
+
+header #banner2{
+	height: 200px;
+	background: url(https://cdn0.vox-cdn.com/thumbor/doLGeAn_gKdc3Cnnfx4UdvJHr-k=/cdn0.vox-cdn.com/uploads/chorus_asset/file/6929447/KUBO_sunset_laika_focus.0.jpg) center/cover no-repeat;
+	box-shadow: inset 0 -110px 150px -10px #000000;
+}
+
+header #banner3{
+	height: 200px;
+	background: url(../res/hacksaw.png) top/cover no-repeat;
+	box-shadow: inset 0 -110px 150px -10px #000000;
+}
+
+.featurette{
+	box-sizing: border-box;
+	width: 100%;
 	height: 150px;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-main{
-	background-color: grey;
-	margin-top: 100px;
+	margin: 0px;
+	padding: 0px;
 }
 
-main .featurette{
-	background-color: salmon;
+.featurette-container a{
+	color: black;
 }
 
-main #latest{
-	background-color: yellow;
+.featurette-container:hover a{
+	color: orangered;
 }
 
-main #trending{
-	background-color: skyblue;
+.card{
+	/* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card > div{
+	width: 100%;
+	height: 370px;
+}
+
+main .card > button{
+	/*float: right;*/
+	margin: 10px;
+}
+
+main .card > h4, .card > p{
+	margin: 10px 0 0 10px;
+}
+
+.card p{
+	font-size: 12px;
+	font-style: italic;
+	color: grey;
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+main #left{
+	border-right: 1px solid #e3e5e8;
+
+}
+
+main #right .trend {
+	color: white;
+	height: 100px;
+}
+
+main #right .trend:hover, .trend:focus{
+	color: orangered;
+	/*text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;*/
+
+}
+
+main #right .trend h3{
+	font-weight: 600;
+	bottom: 0px;
+	position: absolute;	
+	font-size: 20px;
+}
+
+
+
+
+footer{
+	/*height: 250px;*/
+	background: #282828;
+	box-sizing: border-box;
+}
+
+footer i[class*='fa ']{
+	font-size: 30px;
+	padding: 5px;
+}
+
+footer .right{
+	text-align: right;
+}
+
+footer .right h4{
+	margin-top: 20px;
+}
+
+footer .input-group{
+	width: 300px;
+	right: 0px;
+	position: absolute;
+	/*float: right;		*/
+}
+
+footer #copyright{
+	margin-top: 50px;		
 }

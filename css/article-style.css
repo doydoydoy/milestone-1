@@ -1,0 +1,119 @@
+.article-banner{
+	width: 100%;
+	height: 400px;
+}
+
+section * {
+	color: black;
+}
+
+.article	{
+	/* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.article-main{
+	margin: 20px 0;
+}
+
+.article-left{
+	border-right: 1px solid #d1d3d6;
+}
+
+.article-left #tags{
+	padding-top: 10px;
+}
+
+.article-left span > a{
+	color: orangered;	
+}
+
+.article-right{
+	padding-top: 10px;
+}
+
+.share{
+	/*border: 1px*/
+}
+
+.share > div:first-child{
+	font-size: 20px;
+}
+
+.share i[class*='fa ']{
+	font-size: 35px;
+	padding: 5px;
+}
+
+.archives{
+
+}
+
+.archives ul{
+	list-style: none;
+	padding:10px;
+}
+
+.archives ul li{
+	padding: 10px;
+	font-size: 12px;
+	border-bottom: 1px dotted #e5dede	;
+}
+
+.related-container{
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+.article #discussion{
+	border-top: 1px solid #d1d3d6;
+	background-color: #f2f2f2;
+	/*margin: 0 15px;*/
+	/*padding: 0px*/
+}
+
+#discussion .comments{
+	border-bottom: 1px solid #d1d3d6;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.comments h4, .comments p, .comments > div,.comments i{
+	color: #515151;
+}
+
+.comments div> h4 > span{
+	font-size: 12px;
+	color: #7f7f7f;
+}
+
+.comment-box{
+	background-color: #f2f2f2;
+
+}
+
+#commentform input{
+	margin: 10px 0;
+	width: 50%;
+}
+
+#commentform textarea{
+	width: 50%;
+	height: 200px;
+	resize: none;
+}
+
+/* wip */
+
+.related{
+	box-sizing: border-box;
+	height: 150px;
+	/*width: 100%;*/
+	margin: 10px 0px;
+	padding: 0px;
+}
+
+

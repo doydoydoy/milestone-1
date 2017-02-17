@@ -1,0 +1,79 @@
+@media screen and (max-width: 1200px){
+	.container{
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.container{
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 770px){
+
+	nav .container > .row > div:first-child{
+		text-align: center;
+	}
+
+	nav #options{
+		padding-top: 5px;
+	}
+
+	/*Make dropdown links appear inline*/
+	nav ul {
+/*		position: static;
+		display: none;
+		width: 100%;*/
+		text-align: center;
+	}
+	/*Create vertical spacing*/
+	nav li {
+/*		margin-bottom: 1px;
+		width: 100%;
+*/	}
+	/*Make all menu links full width*/
+	nav ul li, li a {
+		/*width: 100%;*/
+	}
+
+	/*Display 'show menu' link*/
+	.show-menu {
+		/*display:block;*/
+	}
+
+    main #left{
+    	border: none;
+    }		
+    .card > div{
+        height: 250px; 
+    }
+    #paging-row{
+    	margin: 0px;
+    }
+    #paging{
+        text-align: center;
+    }
+    footer .left{
+    	margin-bottom: 10px;
+    }
+    footer .right{
+    	/*margin: 10px;*/
+    	border-top: 1px dotted grey;
+    }
+    footer *{
+    	text-align: center;
+    	box-sizing: border-box;
+    }
+	footer .input-group{
+	width: 300px;
+	top:50%;
+	left: 50%;
+	margin-top: 10px;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	}
+	* {
+		/*border: 1px solid orange;*/
+	}
+}

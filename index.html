@@ -7,150 +7,274 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700|Merriweather:400,400italic,700,700italic|Oswald:300">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body>
-<nav class="container-fluid fixed-nav-bar">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6">
-				<a href="#"><h1>Screen Club</h1></a>
-			</div>
-			<div class="col-lg-6">
-				<ul>
-					<li><a href="">44</a></li>
-					<li><a href="">44</a></li>
-					<li><a href="">44</a></li>
-					<li><a href="">44</a></li>
-					<li><button type="button">44</button></li>
-				</ul>
+
+<!-- navigation bar -->
+<nav class="container-fluid menu" style="padding: 0;">
+	<div class="container-fluid" style="padding: 0; background-color: #282828">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-5 col-sm-5 col-xs-12">
+						<h1><a href='#'>Screen Club</a></h1>
+				</div>
+				<div class="col-lg-4 col-md-7 col-sm-7 col-xs-12" id="options">
+					<a href="nav" title="Show navigation">Show navigation</a>
+				    <a href="#" title="Hide navigation">Hide navigation</a>
+				    <label for="show-menu" class="show-menu">Menu</label>
+					<input type="checkbox" id="show-menu" role="button">
+					<ul>
+						<li><a href="/">Insights</a></li>
+						<li><a href="/">About</a></li>
+						<li><a href="/">Ask</a></li>
+						<li><a href="/">Boards</a></li>
+						<li><button type="button" class="button btn-danger">Mailing List</button></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
+	<div class="container" id="search-container">
+		<div class="row">
+			<div class="input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<span class="input-group-btn">
+					<button type='button' class="btn btn-default">Find</button>
+				</span>
+				<input type="text" placeholder="Search" class="form-control"></input>
+			</div>
+		</div>
+	</div> 
 </nav>
 
-<div class="container-fluid" id="search">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<button></button>
-				<input type="text" placeholder="Search"></input>
-			</div>
-		</div>
-	</div>
+<div class="container-fluid" id="search-container">
+		
 </div>
 
-
-
-<header class="container-fluid" id="banner">
+<!-- banner -->
+<header class="container-fluid">
 	<div class="row">
-		<div class="col-lg-8" id="banner-main">
-			<div>
-				<h2>123</h2>
-				<h3>123</h3>
+		<a href="#">
+			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" id="banner1">
+				<h3>La La Land: A Fantasy Based On Reality</h3>
+				<h4>Damien Chazelle's La La Land provides you the musical and style of the classics while providing contemporary senses in one package.</h4>
 			</div>
-		</div>
-		<div class="col-lg-4" id="banner-2nd">
-			<div>
-				<h3>123</h3>
-				<h4>123</h4>
+		</a>
+		<a href="#">
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6" id="banner2">
+				<h4>Analysis: Kubo and the Two Strings</h4>
 			</div>
-		</div>
-		<div class="col-lg-4" id="banner-3rd">
-			<div>
-				<h3>123</h3>
-				<h4>123</h4>
+		</a>
+		<a href="#">
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6" id="banner3">
+				<h4>Character Study Sessions: Hacksaw Ridge</h4>
 			</div>
-		</div>
+		</a>
 	</div>
 </header>
 
-<main class="container-fluid">
-	<div class="row featurette">
+<main class="container">
+	<div class="row" id="featurette">
 		<div class="col-lg-12">
 			<h3>Featurette</h3>
 		</div>
 	</div>
-	<div class="row featurette">
-		<div class="col-lg-3">
-			<img src="">
-			<h4>@@</h4>
+	<div class="row">
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 featurette-container">
+			<div style="background:url(https://i.ytimg.com/vi/qtt0zwr3l_A/maxresdefault.jpg) center/cover no-repeat" class="featurette"></div>
+			<a href="#"><h4>Manchester By The Sea: The Inverted Batman</h4></a>
 		</div>
-		<div class="col-lg-3">
-			<img src="">
-			<h4>@@</h4>
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 featurette-container">
+			<div style="background:url(http://media-cdn.timesfreepress.com/img/photos/2016/03/24/1458852051_0wJiVjLyp2--1-_t755_hde37d95367be0fab21949e1878952fc27ac3815d.jpg) center/cover no-repeat" class="featurette">
+			</div>
+			<a href="#"><h4>The Ten Commandments: Why Is It a Classic?</h4></a>
 		</div>
-		<div class="col-lg-3">
-			<img src="">
-			<h4>@@</h4>
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 featurette-container">
+			<div style="background:url(http://cdn-static.denofgeek.com/sites/denofgeek/files/2016/09/ghost-shell-movie-scarlett-johansson-major.jpg) center/cover no-repeat" class="featurette">
+			</div>
+			<a href="#"><h4>Trailer Rewind: Ghost In The Shell</h4></a>
 		</div>
-		<div class="col-lg-3">
-			<img src="">
-			<h4>@@</h4>
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 featurette-container">
+			<div style="background: url(https://i.ytimg.com/vi/-Cg_sshrEjo/maxresdefault.jpg) center/cover no-repeat" class="featurette"></div>
+			<a href="#"><h4>What Makes Japanese Horror Movies Scary?</h4></a>
 		</div>
 	</div>
+
 	<div class="row">
-		<section class='col-lg-8' id="latest">
+		<div class="col-lg-8 col-md-8 col-sm-8" id="left">
 			<div>
 				<h3>Latest</h3>
 			</div>
-			<div>aa</div>
-			<div>aa</div>
-			<div>aa</div>
-			<div>aa</div>
+			<div class='card'>
+				<div style="background:url(http://sardossolutions.com/wp-content/uploads/2015/05/Orchestra.berlin.conductor2.jpg) center/cover no-repeat">		
+				</div>
+				<h4>How Music Affects The Story?</h4>
+				<p>February 17, 2017</p>
+				<button class="btn btn-info">Read More</button>
+			</div>
+			<div class='card'>
+				<div style="background:url(http://www.extendededition.net/wp-content/uploads/2013/05/Canon1DmkIV.jpeg) center/cover no-repeat">
+				</div>
+				<h4>Film On A Budget: Camera Edition</h4>
+				<p>February 17, 2017</p>
+				<button class="btn btn-info">Read More</button>
 
-		</section>
-		<section class="col-lg-4" id="trending">
+			</div>
+			<div class='card'>
+				<div style="background:url(http://thenortheasttoday.com/wp-content/uploads/2016/09/2f7848bf65a1e3168ca8091aae986ae0.jpg) center/cover no-repeat">
+				</div>
+				<h4>Parts of a Film Studio And Their Roles</h4>
+				<p>February 17, 2017</p>
+				<button class="btn btn-info">Read More</button>
+
+			</div>
+			<div class='card'>
+				<div style="background:url(https://screencraft.org/wp-content/uploads/2016/08/1a-1.jpg) center/cover no-repeat">
+				</div>
+				<h4>Editing: The Most Thankless Job In Film Making</h4>
+				<p>February 17, 2017</p>
+				<button class="btn btn-info">Read More</button>
+
+			</div>
+			<div class='card'>
+				<div style="background:url(http://s3.foxmovies.com/foxmovies/production/films/96/images/gallery/revenant-gallery-20-gallery-image.jpg) center/cover no-repeat">
+				</div>
+				<h4>Natural Lighting on Films</h4>
+				<p>February 17, 2017</p>
+				<button class="btn btn-info">Read More</button>
+
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4" id="right" >
 			<div>
 				<h3>Trending</h3>
 			</div>
-			<div>
-				<h4>1</h4>
+			<div class="trend col-xs-1 hidden"></div>
+			<div class='trend col-lg-12 col-md-12 col-sm-12' style="background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(res/la_la_land.png) top/cover no-repeat">
+				<h3>La La Land</h3>
 			</div>
-			<div>
-				<h4>1</h4>
+			<div class='trend  col-lg-12  col-md-12 col-sm-12'  style="background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(http://cdn.collider.com/wp-content/uploads/2016/10/john-wick-2-poster-slice-600x200.jpg) top/cover no-repeat;">
+				<h3>John Wick 2</h3>
 			</div>
-			<div>
-				<h4>1</h4>
+			<div class='trend  col-lg-12  col-md-12 col-sm-12' style="background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(http://digitalspyuk.cdnds.net/16/45/640x320/landscape-1478512906-beauty-and-the-beast-movie.jpg) top/cover no-repeat;">
+				<h3>Beauty and the Beast</h3>
 			</div>
-			<div>
-				<h4>1</h4>
+			<div class='trend  col-lg-12  col-md-12 col-sm-12' style="background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(http://img.cinemablend.com/cb/f/c/a/4/a/b/fca4ab935f2482cb596911e3a01e9f6f92c4853fd176f12f0269ac3a94cd1f43.jpg) top/cover no-repeat;">
+				<h3>Kong: Skull Island</h3>
 			</div>
-			<div>
-				<h4>1</h4>
+			<div class='trend  col-lg-12  col-md-12 col-sm-12' style="background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(http://cdn2.thr.com/sites/default/files/imagecache/scale_crop_768_433/2014/02/lego_movies_a_l.jpg) center/cover no-repeat;">
+				<h3>The Lego Batman Movie</h3>
 			</div>
-		</section>
-	</div>
-	<div class="row">
-		<div class="col-lg-8">
-			<button class="button btn-lg btn-default">1</button>
-			<button class="button btn-lg btn-default">1</button>
-			<button class="button btn-lg btn-default">1</button>
-			<button class="button btn-lg btn-default">></button>
+			<div class="trend col-sm-12 hidden"></div>
+			<div class='trend  col-lg-12  col-md-12 col-sm-12' style="background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(http://art-meets-world.com/wp-content/uploads/2016/10/arrival-movie-3.jpg) center/cover no-repeat;">
+				<h3>Arrival</h3>
+			</div>
+			<div class='trend  col-lg-12  col-md-12 col-sm-12' style="background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(http://trailers.apple.com/trailers/fox/a-cure-for-wellness/images/thumbnail_25048.jpg) center/cover no-repeat;">
+				<h3>A Cure For Wellness</h3>
+			</div>
+			<div class='trend  col-lg-12  col-md-12 col-sm-12' style="background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(http://cdn.empireonline.com/jpg/80/0/0/1000/563/0/north/0/0/0/0/0/c/features/5808c5ba0c6437272f613e60/Logan.png) center/cover no-repeat;">
+				<h3>Logan</h3>
+			</div>
+			<div class='trend  col-lg-12  col-md-12 col-sm-12' style="background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(http://www.chicagonow.com/hammervision/files/2016/10/moonlight-a24-poster.jpg) center/cover no-repeat;">
+				<h3>Moonlight</h3>
+			</div>
+			<div class='trend  col-lg-12  col-md-12 col-sm-12' style="background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(http://glasgowfilm.org//assets/general/_opengraph/Manchester-by-the-Sea-Full-Width.jpg) center/cover no-repeat">
+				<h3>Manchester By The Sea</h3>
+			</div>
+			<div class="trend col-xs-1 hidden"></div>
 		</div>
-		<div class="col-lg-4">
+		<div class="row" id="paging-row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="paging">
+				<ul class="pagination">
+					<li>
+				      <a href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				      </a>
+				    </li>
+				    <li><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li>
+				      <a href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				      </a>
+			    	</li>
+			  	</ul>			
+  			</div>
 		</div>
 	</div>
+
 </main>
 
-<footer class="container">
-	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-6">
-			<img src=".1">
-			<div><span>Contributors | Terms & policy | Privacy | Archives</span></div>
-			<img src=".1">
-			<img src=".1">
-			<img src=".1">
-		</div>
-		<aside style="float: right">
-			<span>Join our Mailing list</span>
-			<div>
-				<input type="text"></input>
-				<input type="button"></input>
+<footer class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="left col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<h2>Screen Club</h2>
+				<div>
+					<span>Contributors | Terms & Policy | Privacy | Archives</span>
+				</div>
+				<div>
+					<span>Follow us on: 
+						<i class="fa fa-facebook-square" aria-hidden="true"></i>
+						<i class="fa fa-twitter-square" aria-hidden="true"></i>
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+						<i class="fa fa-reddit-square" aria-hidden="true"></i>
+						<i class="fa fa-rss-square" aria-hidden="true"></i>
+
+					</span>
+				</div>
 			</div>
-			<span>&copy; Screen Club 2017, LLC</span>
-		</aside>
+			<div class="right col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<h4>Join our mailing list!</h4>
+				<div class="input-group">
+					<input type="email" class='form-control' placeholder="Email Address"></input>
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-danger">Subscribe</button>
+					</span>
+				</div>
+				
+				<div id="copyright">&copy; Screen Club 2017, LLC</div>
+			</div>
+		</div>
 	</div>
 </footer>
 
+
+<script type="text/javascript">
+	$(document).ready(function () {
+
+		var menu = $('menu');
+		var origOffsetY = menu.offset().top;
+		console.log(navpos.top);
+
+		function scroll() {
+		    if ($(window).scrollTop() >= origOffsetY) {
+		        $('menu').hasClass('navbar-fixed-top');
+		        $('search').addClass('menu-padding');
+		    } else {
+		        $('menu').removeClass('navbar-fixed-top');
+		        $('search').removeClass('menu-padding');
+		    }
+
+
+		   }
+
+		  document.onscroll = scroll;
+
+});
+</script>
+
 </body>
+
+
+
+
+
 </html>
