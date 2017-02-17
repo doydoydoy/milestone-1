@@ -228,7 +228,9 @@ main #right .trend h3{
 	font-size: 20px;
 }
 
-
+#paging-row{
+	padding: 0 30px;
+}
 
 
 footer{

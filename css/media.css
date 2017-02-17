@@ -8,6 +8,11 @@
 	.container{
 		width: 95%;
 	}
+
+	main #right .trend h3{
+    	font-size: 16px;
+    	font-weight: normal;
+    }
 }
 
 @media screen and (max-width: 770px){
@@ -44,10 +49,17 @@
 
     main #left{
     	border: none;
-    }		
+    }
+
     .card > div{
         height: 250px; 
     }
+
+    main #right .trend h3{
+    	font-size: 14px;
+    	font-weight: normal;
+    }
+
     #paging-row{
     	margin: 0px;
     }
@@ -55,7 +67,7 @@
         text-align: center;
     }
     footer .left{
-    	margin-bottom: 10px;
+    	margin-bottom: 16px;
     }
     footer .right{
     	/*margin: 10px;*/
